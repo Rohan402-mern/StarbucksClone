@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    /* background-color: #0E382C; */
+}
+::-webkit-scrollbar-track {
+  background:white;
+}
+::-webkit-scrollbar-thumb {
+  background:rgb(75,153,125);
+  border-radius: 3px;
+}
+.footer{
+    background-color: #0E382C;
+    height: 63vw;
+}
+.footer-logo{
+    /* background-color: red; */
+    width: 165px;
+}
+.footer-s1{
+    display: flex;
+    gap:25px;
+    padding: 110px 110px 20px 110px;
+    /* background-color: red; */
+}
+.footer-s1 ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    flex-direction: column;
+}
+.footer-s1 h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.footer-s1 li{
+    font-size: 13px;
+    font-weight: 400;
+    width: 175px;
+   color: rgb(255,255,255);
+    cursor: pointer;
+}
+.footer-s1 li:hover{
+     color: rgb(162,162,162);
+}
+
+.footer-s2{
+display: flex;
+padding:0px 110px ;
+gap: 25px;
+}
+.footer-social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-social-media h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.footer-social-media ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-social-media img{
+cursor: pointer;
+}
+.footer-app img{
+    cursor: pointer;
+}
+.footer-app{
+    gap: 6px;
+     display: flex;
+  flex-direction: column;
+  width: fit-content;  
+}
+.footer-s3{
+    /* background-color:red ; */
+    margin: 40px 110px;
+}
+.footer-s3 hr{
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: rgb(162,162,162);
+}
+.footer-s3 ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+}
+.footer-s3 li{
+    color: rgb(255,255,255);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-s3 li:hover{
+    color: rgb(162,162,162);
+}
+.footer-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer-s3 p{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.footer-s3 p:hover{
+    color: rgb(162,162,162);
+}

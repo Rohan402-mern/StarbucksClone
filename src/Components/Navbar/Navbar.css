@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+      font-family: "Montserrat";
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    padding: 15px 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.navbar-s1{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.navbar-s1 img{
+    width: 40px;
+}
+.navbar-s1 ul{
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+   font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+.navbar-s1 li{
+    cursor: pointer;
+    position: relative;
+}
+.navbar-s1 li::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #006241;
+}
+
+.navbar-s1 li.active::after {
+  width: 100%;
+
+}
+.navbar-s1 li:hover{
+    color: rgb(0,117,74);
+}
+.navbar-s2{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.navbar-input{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius:17px ;
+    gap:15px;
+    padding: 8px 20px;
+}
+.navbar-input input{
+    width: 195px;
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;   
+}
+.navbar-input input::placeholder{
+    color:rgb(33, 37, 41);
+    opacity: 0.7;
+}

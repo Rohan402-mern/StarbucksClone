@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    background-color: #192F29;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 125px;
+    box-shadow:0 -4px 4px -2px #DEE2E6;
+    box-shadow:0  4px 4px -2px #DEE2E6;
+}
+.banner p{
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(249,249,249);
+}
+.banner button{
+display: flex;
+color: rgb(249,249,249);
+cursor: pointer;
+background-color: transparent;
+outline: none;
+border: 1px solid white;
+font-weight: 400;
+font-size: 11px;
+padding: 7px 13px;
+border-radius: 16px;
+}
