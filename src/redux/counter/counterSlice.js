@@ -5,7 +5,7 @@ export const counterSlice = createSlice({
   initialState: {
     search: false,
     active:'home',
-
+    slide:0,
   },
   reducers: {
     isSearch: (state) => {
@@ -13,10 +13,13 @@ export const counterSlice = createSlice({
     },
     barChange:(state,action)=>{
         state.active = action.payload
+    },
+    indexChange:(state,action)=>{
+      state.slide = action.payload
     }
   },
 })
 
-export const { isSearch,barChange } = counterSlice.actions
+export const { isSearch,barChange,indexChange } = counterSlice.actions
 
 export default counterSlice.reducer

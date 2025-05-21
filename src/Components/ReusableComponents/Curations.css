@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Montserrat";
+}
+.curations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.curations img{
+    border-radius: 50%;
+    width: 110px;
+    cursor: pointer;
+}
+.curations img:hover{
+    border: 3px solid #00754A;
+    width: 104px;
+}
+.curations p{
+    font-size: 14px;
+    font-weight: 600;
+    color:rgb(33, 37, 41);
+}

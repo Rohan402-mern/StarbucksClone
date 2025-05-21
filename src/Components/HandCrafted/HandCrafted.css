@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Montserrat";
+}
+.handcrafted{
+    margin:70px 125px 120px 125px;
+    /* background-color: red; */
+}
+
+.handcrafted h1{
+    font-weight: 700;
+    font-size: 24px;
+    color:rgb(30, 57, 50);
+}
+
+.handcraft-cont{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 90px; */
+}
