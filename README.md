@@ -15,4 +15,4 @@ All routes in this project
 /our-heritage
 /coffeeHouse
 /our-company
-/
+/help-center
