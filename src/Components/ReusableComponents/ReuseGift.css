@@ -1,0 +1,22 @@
+.reusegift h1{
+    font-size: 23px;
+    font-weight: 600;
+    color:rgb(33, 37, 41);
+    margin:10px 0px 10px 115px ;
+    background-color: white;
+}
+.reusegift hr{
+    background-color: #C7C8C9;
+    opacity: 0.6;
+    /* height: 0.3px; */
+}
+.reusegift-cont{
+    background-color: white;
+    display: grid;
+    grid-template-columns:300px 300px 300px;
+    column-gap: 80px;
+    row-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}

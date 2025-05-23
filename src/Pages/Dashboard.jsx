@@ -5,7 +5,6 @@ import Scroller from '../Components/Scroller/Scroller'
 import HandCrafted from '../Components/HandCrafted/HandCrafted'
 import Barista from '../Components/Barista/Barista'
 import WorldCoffee from '../Components/WorldCoffee/WorldCoffee'
-
 const Dashboard = () => {
   return (
     <div>

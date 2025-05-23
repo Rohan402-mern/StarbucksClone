@@ -6,7 +6,7 @@ const Slider = () => {
  const slide = useSelector((state)=>state.counter.slide);
  const slideRef = useRef();
  const dispatch = useDispatch();
-console.log(slide)
+// console.log(slide)
  const handleClick=(direction)=>{
   let newIndex = slide +direction;
  if(newIndex>3)newIndex=3;

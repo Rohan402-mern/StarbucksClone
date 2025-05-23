@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Montserrat";
+}
+
+.bluebtn{
+    font-weight: 600;
+    font-size: 11px;
+    color: rgb(255,255,255);
+    background-color: #00754A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+.bluebtn:hover{
+      background-color: #1E3932;
+}
