@@ -2,6 +2,7 @@ import React from 'react'
 import './ReuseItem.css'
 import Bluebtn from './BlueBtn'
 const ReuseItem = ({imageUrl,info,title}) => {
+  
   return (
     <div className='reuseitem'>
         <div className='reuseitem-main'>

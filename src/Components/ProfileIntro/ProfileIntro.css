@@ -1,0 +1,126 @@
+.profileintro{
+    width: 100%;
+    /* height: 30vw; */
+    background-color: #FAF6EE;
+    background-image: url("https://www.starbucks.in/assets/images/leaf_gold.svg");
+    /* position: relative; */
+    background-position:top left,;
+    background-repeat: no-repeat;
+    background-size: 110px,;
+}
+.profile-setting{
+    position:relative;
+    cursor: pointer;
+    left: 88vw;
+    top: 90px;
+}
+.profile-main{
+    background-position: bottom right;
+    background-size: 110px;
+    background-image: url("https://www.starbucks.in/assets/images/dots_gold.svg");
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: red; */
+
+}
+
+.profile-inner{
+text-align: center;
+width: 210px;
+height: 210px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+background-color: transparent;
+justify-content: center;
+border: 3px solid white;
+}
+
+.profile-cover{
+    background-color: transparent;
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-logo{
+    border-radius: 50%;
+    background-color:transparent;
+    width: 203px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 203px;
+    border: 3px solid #CBA258;
+    text-align: center;
+}
+.profile-logo img{
+    width: 190px;
+    
+}
+.profile-main h1{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+.profile-main button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: black;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 8px 37px;
+    border-radius: 18px;
+    margin-top: 17px;
+     margin-bottom: 55px;
+     cursor: pointer;
+}
+.profile-help{
+    background-color: white;
+    border-top-left-radius:30px ;
+    border-top-right-radius:30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0px;
+}
+.profile-help-main{
+    /* background-color: red; */
+    cursor: pointer;
+    width: 80%;
+}
+.profile-help hr{
+    width: 80%;
+    background-color: #CCCCCC;
+    /* height: 1px; */
+    margin-top: 15px;
+}
+.profile-help-cont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-help-cont p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(30, 57, 50);
+
+}
+.profile-help-main {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}

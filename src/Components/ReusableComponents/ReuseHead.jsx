@@ -1,9 +1,9 @@
 import React from 'react'
 import './ReuseHead.css'
-const ReuseHead = ({route}) => {
+const ReuseHead = ({title}) => {
   return (
     <div className='reusehead'>
-      Home &gt; {route}
+      {title}
     </div>
   )
 }

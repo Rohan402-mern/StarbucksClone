@@ -25,7 +25,7 @@ const Navbar = () => {
                 <img style={{cursor:'pointer'}} src="https://www.starbucks.in/assets/icon/search.svg" alt="" />
                 <input type="text" name="" id="" placeholder='Looking for something specific?' />
             </div>
-            <img src="https://www.starbucks.in/assets/icon/account_thin.svg" alt="" style={{width:'32px',cursor:'pointer'}} />
+            <Link style={{textDecoration:'none',color:'black'}} to={'/profile'} ><img onClick={()=>dispatch(barChange('profile'))} src="https://www.starbucks.in/assets/icon/account_thin.svg" alt="" style={{width:'32px',cursor:'pointer'}} /></Link>
         </div>
     </nav>
   )

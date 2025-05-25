@@ -1,0 +1,27 @@
+.loginintro{
+    background-color: white;
+    /* transition: 2.6s ease; */
+    width: 590px;
+    height: 480px;
+}
+.loginintro-skip{
+    background-color: red;
+    position: relative;
+}
+.loginintro-skip button{
+    display: flex;
+    float: right;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color:rgb(0, 117, 74);
+font-weight: 700;
+    background-color: transparent;
+}
+.loginintro h1{
+    font-size: 22px;
+    font-weight: 700;
+    color:rgb(30, 57, 50);
+    /* background-color: pink; */
+    padding-top: 20px;
+}
