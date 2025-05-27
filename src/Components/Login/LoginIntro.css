@@ -1,11 +1,11 @@
 .loginintro{
     background-color: white;
     /* transition: 2.6s ease; */
-    width: 590px;
-    height: 480px;
+   padding: 35px 24px;
+   border-radius: 23px;
 }
 .loginintro-skip{
-    background-color: red;
+    /* background-color: red; */
     position: relative;
 }
 .loginintro-skip button{
@@ -15,8 +15,43 @@
     outline: none;
     font-size: 12px;
     color:rgb(0, 117, 74);
-font-weight: 700;
+    cursor: pointer;
+    font-weight: 700;
     background-color: transparent;
+}
+.label-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+.label-div hr{
+    margin-top: 6px;
+    /* width: 100%;     */
+}
+.label-div label{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0,0,0,);
+    
+}
+
+.label-div input{
+    background-color: transparent;
+    /* background-color: yellow; */
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+   font-size: 14px;
+   font-weight: 500;
+   color:rgba(0, 0, 0, 0.87);
+}
+.label-div input::placeholder{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.47);
+    font-weight: 400;
 }
 .loginintro h1{
     font-size: 22px;
@@ -24,4 +59,55 @@ font-weight: 700;
     color:rgb(30, 57, 50);
     /* background-color: pink; */
     padding-top: 20px;
+}
+.logininfo-form{
+/* background-color: pink; */
+ width: 574px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.logininfo-form p{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400px;
+    color: black;
+    /* background-color: pink; */
+
+}
+.loginintro-signup{
+    color:rgb(0, 117, 74);
+font-size: 12px;
+font-weight: 500;
+cursor: pointer;
+}
+.logininfo-form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    color: white;
+    padding: 13px 145px;
+    border-radius: 24px;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.btn-disbled{
+background-color: gray;
+}
+.btnhoverednow{
+    background-color: #00754A;
+}
+.btnhoverednow:hover{
+    background-color: #1E3932;
+}
+.login-hidden{
+    width:100%;
+    background-color:#EFD4DC;
+    height: 0px;
+    transition: 0.3s ease;
 }

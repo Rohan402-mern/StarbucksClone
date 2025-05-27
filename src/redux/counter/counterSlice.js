@@ -8,6 +8,8 @@ export const counterSlice = createSlice({
     slide:0,
     giftSwitch:'featured',
     showModel:false,
+    emaildata:"",
+    passdata:"",
   },
   reducers: {
     isSearch: (state) => {
@@ -25,9 +27,15 @@ export const counterSlice = createSlice({
     ModelChange: (state,action) => {
       state.showModel = action.payload
     },
+    emailChange: (state,action) => {
+      state.emaildata = action.payload
+    },
+    passChange: (state,action) => {
+      state.passdata = action.payload
+    },
   },
 })
 
-export const { isSearch,barChange,indexChange,giftChange,ModelChange } = counterSlice.actions
+export const { isSearch,barChange,indexChange,giftChange,ModelChange,emailChange,passChange } = counterSlice.actions
 
 export default counterSlice.reducer
