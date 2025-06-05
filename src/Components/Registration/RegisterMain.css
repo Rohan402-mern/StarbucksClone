@@ -1,0 +1,9 @@
+.registermain{
+/* background-color: red; */
+}
+.registermain h1{
+    color:rgb(30, 57, 50);
+    font-size: 22px;
+    font-weight:600 ;
+    padding-left: 115px;
+}

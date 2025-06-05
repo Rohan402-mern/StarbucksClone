@@ -1,0 +1,13 @@
+.orderlist{
+    /* background-color: red; */
+    margin-bottom: 80px;
+}
+.orderlist-cont{
+    display: grid;
+    grid-template-columns: 350px 350px 350px  ;
+    align-items: center;
+    justify-content: center;
+    column-gap: 38px;
+    row-gap: 26px;
+    
+}

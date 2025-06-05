@@ -1,0 +1,35 @@
+.stage{
+/* background-color: red; */
+width: 100%;
+}
+
+.stage-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.stage-circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border:3px solid #D4E9E2;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7ACFAB;
+}
+
+.firstcircle{
+    border:3px solid #006241 ;
+    color:#006241 ;
+}
+
+.stage-bar{
+    width: 350px;
+    height:6px;
+    background-color: #D4E9E2;
+
+}

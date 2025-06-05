@@ -1,0 +1,16 @@
+.orderhead{
+    /* background-color: red; */
+    padding:30px 0px 30px 115px ;
+
+}
+.orderhead h1{
+    color: rgb(33, 37, 41);
+    font-size: 16px;
+    font-weight: 600;
+}
+.orderhead p{
+    color: rgb(33, 37, 41);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+}

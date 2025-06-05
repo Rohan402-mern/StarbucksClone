@@ -1,0 +1,20 @@
+.registerintro{
+width: 100%;
+}
+.registerintro-main{
+    width: 100%;
+    background-color:#1E3932;
+    background-image: url("https://www.starbucks.in/assets/icon/green_rleaf.svg"),url("https://www.starbucks.in/assets/icon/green_ldots.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: top right,bottom left;
+    background-size: 65px,65px;
+    height: 170px;
+}
+.registerintro-cont{
+    width: 100%;
+    position: relative;
+    top: -36px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 25px;
+}

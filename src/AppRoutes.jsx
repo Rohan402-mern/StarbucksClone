@@ -1,0 +1,35 @@
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Dashboard from './Pages/Dashboard';
+import Gift from './Pages/Gift';
+import Profile from './Pages/Profile';
+import HelpCenter from './Pages/HelpCenter';
+import Registration from './Pages/Registration';
+import Order from './Pages/Order';
+
+function AppRoutes() {
+  const location = useLocation();
+
+  const showFooterPaths = ['/dashboard', '/giftcards', '/profile','/profile/help-center'];
+  const shouldShowFooter = showFooterPaths.includes(location.pathname);
+
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/giftcards" element={<Gift />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/help-center" element={<HelpCenter />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/ordering" element={<Order />} />
+        <Route path="*" element={<div><h1>404 NOT FOUND</h1></div>} />
+      </Routes>
+      {shouldShowFooter && <Footer />}
+    </>
+  );
+}
+
+export default AppRoutes;

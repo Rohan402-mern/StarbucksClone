@@ -60,10 +60,10 @@ checkpass = true;
 
         <div style={{width:'100%'}}>
           <p style={{ marginTop: '0px', }}>
-          Don't have an account?&nbsp; <Link className='loginintro-signup' to="/signup">SignUp</Link>
+          Don't have an account?&nbsp; <Link className='loginintro-signup' to="/registration">SignUp</Link>
         </p>
         </div>
-        <button className={`${checkpass ? 'btnhoverednow' : 'btn-disbled'}`} type='submit'>Login</button>
+        <button disabled={!checkpass} className={`${checkpass ? 'btnhoverednow' : 'btn-disbled'}`} type='submit'>Login</button>
         <p style={{ marginTop: '20px' }}>
           Facing trouble logging in?&nbsp; <Link className='loginintro-signup' to="/help">Get Help</Link>
         </p>
