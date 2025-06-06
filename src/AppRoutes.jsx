@@ -7,6 +7,8 @@ import Profile from './Pages/Profile';
 import HelpCenter from './Pages/HelpCenter';
 import Registration from './Pages/Registration';
 import Order from './Pages/Order';
+import ScrollToTop from './Components/Scroller/ScrollToTop';
+import ProductPage from './Pages/ProductPage';
 
 function AppRoutes() {
   const location = useLocation();
@@ -17,6 +19,7 @@ function AppRoutes() {
   return (
     <>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -25,6 +28,7 @@ function AppRoutes() {
         <Route path="/profile/help-center" element={<HelpCenter />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/ordering" element={<Order />} />
+        <Route path="/ordering/:productName" element={<ProductPage/>} />
         <Route path="*" element={<div><h1>404 NOT FOUND</h1></div>} />
       </Routes>
       {shouldShowFooter && <Footer />}

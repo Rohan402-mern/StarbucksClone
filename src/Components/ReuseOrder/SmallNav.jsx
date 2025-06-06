@@ -5,7 +5,7 @@ import { useSelector,useDispatch } from 'react-redux'
 const SmallNav = ({items}) => {
     const suborderSwitch = useSelector((state)=>state.counter.suborderSwitch);
     const dispatch = useDispatch();
-    console.log(suborderSwitch)
+    // console.log(suborderSwitch)
   return (
     <div className='smallnav-main'>
     <div className='smallnav'>

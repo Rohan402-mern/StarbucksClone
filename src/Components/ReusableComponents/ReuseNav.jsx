@@ -8,7 +8,7 @@ const ReuseNav = ({items}) => {
     const dispatch = useDispatch();
     const subItems ={Drinks:'Espresso',Food:'Sandwiches & Wraps'}
     // console.log(orderSwitch)
-    console.log(suborderSwitch)
+    // console.log(suborderSwitch)
   return (
 
     <div className='reusenav'>

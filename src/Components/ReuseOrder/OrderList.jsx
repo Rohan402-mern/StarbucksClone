@@ -5,10 +5,12 @@ import './OrderList.css'
 import { useSelector,useDispatch } from 'react-redux'
 import { ModelChange } from '../../redux/counter/counterSlice'
 import PopUp from '../PopUp/Popup'
+import PopCard from '../PopUp/PopCard'
 const OrderList = () => {
- 
+
       const showModel = useSelector((state)=>state.counter.showModel);
       const selectedProduct = useSelector((state)=>state.counter.selectedProduct);
+      // console.log(selectedProduct)
       const dispatch = useDispatch();
      const orderSwitch = useSelector((state)=>state.counter.orderSwitch);
     //  console.log(orderSwitch)
@@ -20,18 +22,14 @@ const OrderList = () => {
                 
                 return(
                   <div key={item.id}>
-                 <ReuseCard imgUrl={item.imgUrl} typeUrl={item.typeUrl} title={item.title} info={item.info} summary={item.summary} price={item.price}  />
-                 
+                 <ReuseCard items={item}  />
                 </div>
             )})}
         </div>
       </div>
       {showModel && selectedProduct && (
   <PopUp show={true} onClose={() => dispatch(ModelChange(false))}>
-    <div>
-      <img src={selectedProduct.imgUrl} alt={selectedProduct.title} />
-      <p>{selectedProduct.title}</p>
-    </div>
+    {<PopCard selectedProduct={selectedProduct} />}
   </PopUp>
 )}
     </div>

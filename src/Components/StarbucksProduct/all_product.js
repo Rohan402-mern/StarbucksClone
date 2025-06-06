@@ -5,18 +5,31 @@ const all_product={
     type: 'veg-item',
     typeUrl: 'https://www.starbucks.in/assets/icon/veg.svg',
     imgUrl: 'https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/105468.webp',
+    fullimgUrl: 'https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/105468.webp',
     title: 'Cold coffee',
+    content:[
+        {img1:'https://starbucksstatic.cognizantorderserv.com/Icon/Dark/Milk.png',name:'MILK'}
+    ],
     info: 'TALL(354 ml) .354 kcal',
+    fullSummary: 'Everybody’s favourite indulgence. Crafted expertly with premium espresso, blended with milk, and perfected with a hint of vanilla in every sip.',
     summary: 'Everybody’s favourite indulgence. Crafted expertly with prem..',
-    price: '₹ 336.00'
+    price: '₹ 336.00',
+    iteminfo:'VEGETARIAN - 354 KCAL',
   },
   {
     id: 2,
     type: 'veg-item',
     typeUrl: 'https://www.starbucks.in/assets/icon/veg.svg',
     imgUrl: 'https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100501.webp',
+    fullimgUrl: 'https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/100501.webp',
     title: 'Java Chip Frappuccino',
+    content:[
+        {img1:'https://starbucksstatic.cognizantorderserv.com/Icon/Dark/Soy.png',name:'SOY'},
+        {img1:'https://starbucksstatic.cognizantorderserv.com/Icon/Dark/Milk.png',name:'MILK'},
+        {img1:'https://starbucksstatic.cognizantorderserv.com/Icon/Dark/Wheat.png',name:'WHEAT'},
+    ],
     info: 'TALL(354 ml) .392 kcal',
+    fullSummary: 'Mocha sauce and Frappuccino® chips blended with with Frappuccino® roast coffee and milk and ice, then topped with whipped vanilla topping and mocha drizzle to bring you endless java joy.',
     summary: 'Mocha sauce and Frappuccino® chips blended with with Frappu..',
     price: '₹ 409.50'
   },
@@ -24,9 +37,14 @@ const all_product={
     id:3,
     type: 'veg-item',
     typeUrl:'https://www.starbucks.in/assets/icon/veg.svg',
+    fullimgUrl:'https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/100433.webp',
     imgUrl:'https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100433.webp',
     title: 'Caffe Americano',
+    content:[
+        {img1:'https://starbucksstatic.cognizantorderserv.com/Icon/Dark/Milk.png',name:'MILK'},
+    ],
     info: 'SHORT(237 mL) .0 kcal',
+    fullSummary: 'Rich in flavour, full-bodied espresso with hot water in true European style.',
     summary: 'Rich in flavour, full-bodied espresso with hot water in true..',
     price: '₹ 283.50'
   },
