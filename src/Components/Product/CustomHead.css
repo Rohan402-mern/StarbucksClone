@@ -1,3 +1,18 @@
 .customhead{
-    background-color: aqua;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding:20px 0px 40px 115px;
+}
+.customhead h1{
+    color:rgb(30, 57, 50);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.customhead p{
+    color: rgba(30, 57, 50, 0.84);
+    font-size: 9px;
+    font-weight: 400;
+
 }

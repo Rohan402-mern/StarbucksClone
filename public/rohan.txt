@@ -1,0 +1,68 @@
+const javaChipFrappuccino = {
+  name: "Java Chip Frappuccino",
+  description: "A rich blend of coffee, mocha sauce, and chocolate chips, topped with whipped cream and mocha drizzle.",
+  image: "https://www.starbucks.in/ordering/drinks/java-chip-frappuccino", // Replace with actual image URL
+  sizes: [
+    {
+      name: "Tall",
+      volume: "354 ml",
+      price: "₹330.75",
+      calories: 391.7,
+      fat: {
+        total: 19.0,
+        saturated: 12.0,
+        trans: 0.5
+      },
+      carbohydrates: {
+        total: 64.0,
+        sugar: 59.0,
+        fiber: 2.0
+      },
+      protein: 6.0,
+      caffeine: 75
+    },
+    {
+      name: "Grande",
+      volume: "473 ml",
+      price: "₹367.50",
+      calories: 440,
+      fat: {
+        total: 19.0,
+        saturated: 12.0,
+        trans: 0.5
+      },
+      carbohydrates: {
+        total: 64.0,
+        sugar: 59.0,
+        fiber: 2.0
+      },
+      protein: 6.0,
+      caffeine: 75
+    }
+  ],
+  ingredients: [
+    "Mocha Sauce",
+    "Frappuccino Chips",
+    "Frappuccino Roast Coffee",
+    "Milk",
+    "Ice",
+    "Whipped Cream",
+    "Mocha Drizzle"
+  ],
+  allergens: [
+    "Milk",
+    "Soy",
+    "Wheat"
+  ],
+  dietaryConsiderations: {
+    vegan: false,
+    glutenFree: false,
+    dairyFree: false
+  },
+  customizationOptions: [
+    "Add extra espresso shot",
+    "Choose milk type (Whole, Skim, Soy, Almond, Oat)",
+    "Add flavor syrups (Vanilla, Hazelnut, Caramel)",
+    "Request no whipped cream"
+  ]
+};

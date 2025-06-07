@@ -5,9 +5,12 @@ import all_product from '../Components/StarbucksProduct/all_product';
 import ReuseHead from '../Components/ReusableComponents/ReuseHead';
 import { Link } from 'react-router-dom';
 import { barChange } from '../redux/counter/counterSlice';
+import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import Custom from '../Components/Product/Custom';
+import CustomHead from '../Components/Product/CustomHead';
+import ProductSize from '../Components/Product/ProductSize';
 const ProductPage = () => {
+    const yes = useSelector((state)=>state.counter.yes)
     const dispatch = useDispatch();
     const {productName} = useParams();
     const product = all_product.Bestseller.find((item)=>item.title === productName);
@@ -16,35 +19,36 @@ const ProductPage = () => {
   return (
     <div>
         <ReuseHead title={<div><Link onClick={()=>dispatch(barChange("home"))} to={"/dashboard"} style={{textDecoration:'none',color:'inherit'}}>Home</Link> &gt; <Link onClick={()=>dispatch(barChange("order"))} to={"/ordering"} style={{textDecoration:'none',color:'inherit'}}>Order</Link> &gt; <Link onClick={()=>dispatch(barChange("order"))} to={"/ordering"} style={{textDecoration:'none',color:'inherit'}}>Bestseller</Link> &gt; {product.title}</div>} />
-        <div className="productpage">
-            <div className='productpage-img'>
-                <img className='productpage-img-main' src={product.fullimgUrl}  alt={product.title} />
-            <div className="productpage-cont">
-                <div className='productpage-inner'>
-                <img className='productpage-expand' src="https://www.starbucks.in/assets/icon/expand.png" alt="" />
-                <div className='productpage-first'>
-                <img src={product.typeUrl} alt="" />
-                <span>{product.iteminfo}</span>
+        <div className="productpage"> 
+            <div className="productpage-img">
+                <img src={product.fullimgUrl} alt="" />
+            </div>
+            <div className="productpage-customize">
+                {yes === false? 
+                <div className='productpage-info' style={{display:yes === true?'none':'block'}} >
+                 <img className='productpage-expand' src="https://www.starbucks.in/assets/icon/expand.png" alt="" />
+                <div>
+                <div className='productpage-start'>
+                    <img src={product.typeUrl} alt="" />
+                    <span>{product.iteminfo}</span>
                 </div>
                 <h1>{product.title}</h1>
-                <p>{product.fullSummary}</p>
-                <div className='productpage-content'>
-                {product.content.map((list)=>{
-      return <li key={list.img1} className='popcard-s2-item'><img src={list.img1} alt="" />  <p>{list.name}</p></li>
-     })}
-     </div>
-            </div>
-            <div className="productpage-s2">
-                <Custom title={"CUSTOMISE YOUR ORDER(Default)"} info={"TALL,Indian Espresso Roast (regular) - Default,"} />
-                <div className="productpage-s3">
-                <Custom title={"AMP UP YOUR ORDER WITH ADD-ONS"} info={"Vanilla Syrup - Default, With Whipped Topping"} />
-            </div>
-            </div>
-            
-            </div>
-             
+                <p className='productpage-summary'>{product.fullSummary}</p>
+                <ul className="productpage-content">
+                    {product.content.map((list)=>{
+                        return <li key={list.name}  ><img src={list.img1} alt="" />  <p>{list.name}</p></li>
+                    })}
+                </ul>
+                </div>
+                </div>
+                :<div className='productpage-else'>{product.title}</div>}
+                    <ProductSize/>
+                <div className="productpage-topping">
+                    b
+                </div>
             </div>
         </div>
+
     </div>
   )
 }

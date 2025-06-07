@@ -1,0 +1,8 @@
+.productsize-size{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    margin: 30px 115px 0px 115px;
+    
+}

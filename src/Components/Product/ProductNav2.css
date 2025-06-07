@@ -1,0 +1,24 @@
+.productnav2 p{
+    /* background-color: aqua; */
+    color:rgb(196, 196, 196);
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.productnav2 hr{
+    margin-top: 30px;
+}
+.productnav2 ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 115px;
+    margin-top: 30px;
+}
+.productnav2 li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}

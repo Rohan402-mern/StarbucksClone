@@ -14,6 +14,8 @@ export const counterSlice = createSlice({
     suborderSwitch:'Espresso',
     selectedProduct:{},
     selectedGift:{},
+    yes:false,
+    size:'tall',
   },
   reducers: {
     isSearch: (state) => {
@@ -48,10 +50,16 @@ export const counterSlice = createSlice({
     },
     SetSelectedGift:(state,action)=>{
       state.selectedGift = action.payload
+    },
+    isYes: (state) => {
+      state.yes = !state.yes
+    },
+    sizeChange:(state,action)=>{
+      state.size = action.payload
     }
   },
 })
 
-export const { isSearch,barChange,indexChange,giftChange,ModelChange,emailChange,passChange,orderChange,suborderChange,SetSelectedProduct,SetSelectedGift } = counterSlice.actions
+export const { isSearch,barChange,indexChange,giftChange,ModelChange,emailChange,passChange,orderChange,suborderChange,SetSelectedProduct,SetSelectedGift,isYes,sizeChange } = counterSlice.actions
 
 export default counterSlice.reducer
