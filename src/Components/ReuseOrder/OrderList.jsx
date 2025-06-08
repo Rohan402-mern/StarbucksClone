@@ -4,7 +4,7 @@ import ReuseCard from './ReuseCard'
 import './OrderList.css'
 import { useSelector,useDispatch } from 'react-redux'
 import { ModelChange } from '../../redux/counter/counterSlice'
-import PopUp from '../PopUp/Popup'
+import PopUp from '../PopUp/PopUp'
 import PopCard from '../PopUp/PopCard'
 const OrderList = () => {
 

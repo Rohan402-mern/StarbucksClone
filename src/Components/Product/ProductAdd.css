@@ -1,0 +1,20 @@
+.productadd{
+background-color: #006241;
+padding: 13px 0px;
+}
+.productadd button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 9px 70px;
+    border-radius: 21px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 76.5%;
+
+}

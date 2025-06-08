@@ -1,5 +1,5 @@
 .productpage{
-    background-color: red;
+    /* background-color: red; */
      position: relative;
 }
 .productpage-img{
@@ -72,15 +72,15 @@ gap: 6px;
     cursor: pointer;
     top:3%;
 }
+.productpage-start{
+    display: flex;
+    align-items: start;
+    gap: 3px;
+}
 .productpage-start span{
-color: rgb(255, 255, 255);
+color: rgb(200, 200, 200);
 font-size: 10px;
 font-weight: 500;
 }
 
-.productpage-topping{
-    background-color: blue;
-    width: 100%;
-     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
+

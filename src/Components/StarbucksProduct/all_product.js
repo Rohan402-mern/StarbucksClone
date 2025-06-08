@@ -31,9 +31,16 @@ const all_product={
     info: 'TALL(354 ml) .392 kcal',
     fullSummary: 'Mocha sauce and Frappuccino® chips blended with with Frappuccino® roast coffee and milk and ice, then topped with whipped vanilla topping and mocha drizzle to bring you endless java joy.',
     summary: 'Mocha sauce and Frappuccino® chips blended with with Frappu..',
-    price: '₹ 409.50'
-  },
-  {
+    price: '₹ 409.50',
+    iteminfo:'VEGETARIAN - 392 KCAL',
+    SIZE:[{name:'tall',price:`₹ ${(0.00).toFixed(2)}`,volume:'354ml'},{name:'grande',price:`₹ ${47.25}`,volume:'473 ml'},{name:'venti',price:`₹ ${94.5}`,volume:'591 ml'}],
+    customize:{
+      MILK:[{name:'Skimmed Milk',price:`+  ₹ ${(0.00).toFixed(2)}`}],
+     'NON-DAIRY ALTERNATIVES':[{name:'Soy',price:`+  ₹ ${68.25}`},{name:'Almond',price:`+  ₹ ${89.25}`},{name:'Oats',price:`+  ₹ ${(89.25).toFixed(2)}`}],
+     'CHOICE OF ESPRESSO':[{name:'Extra Shot',price:`+ ₹ ${68.25}`},{name:'Indian Expresso Roast (regular) - Default',price:`+ ₹ ${(0.00).toFixed(2)}`}],
+     Ice:[{name:'No Ice',price:`₹ ${(0.00).toFixed(2)}`},{name:'Less Ice',price:`₹ ${(0.00).toFixed(2)}`},{name:'Extra Ice',price:`₹ ${(0.00).toFixed(2)}`}]
+    }
+  },{
     id:3,
     type: 'veg-item',
     typeUrl:'https://www.starbucks.in/assets/icon/veg.svg',
@@ -46,7 +53,8 @@ const all_product={
     info: 'SHORT(237 mL) .0 kcal',
     fullSummary: 'Rich in flavour, full-bodied espresso with hot water in true European style.',
     summary: 'Rich in flavour, full-bodied espresso with hot water in true..',
-    price: '₹ 283.50'
+    price: '₹ 283.50',
+    iteminfo:'VEGETARIAN - 0 KCAL'
   },
   { 
     id:4,

@@ -8,7 +8,7 @@ const ProductNav2 = ({title,items}) => {
       <ProductHead title={title} />
       <ul>
         {items.map((item)=>{
-            return <li><GreenBtn title={item.name} /> <p>{item.price}</p></li>
+            return <li key={item.name} ><GreenBtn title={item.name} /> <p>{item.price}</p></li>
         })}
       </ul>
       <hr />

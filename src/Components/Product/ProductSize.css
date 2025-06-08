@@ -10,10 +10,11 @@
 .productsize-s1{
     /* background-color: aqua; */
      /* background-color: #1E3932; */
-    padding: 10px 0px 10px 115px;
+    padding: 15px 0px 15px 115px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     cursor: pointer;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1)
 }
 .productsize-s1 h1{
     color:rgb(30, 57, 50);
@@ -31,7 +32,7 @@
     padding-top: 30px;
     background-color: #1E3932;
     /* display: none; */
-    height: 300px;
+    height: 220px;
     overflow: auto;
 }
 .productsize-s2::-webkit-scrollbar{
