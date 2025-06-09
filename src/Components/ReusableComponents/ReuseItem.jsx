@@ -13,7 +13,7 @@ const ReuseItem = ({items}) => {
       <div className='reuseitem-cont'>
         <h1>{items.title}</h1>
         <p>{items.info}</p>
-        <Bluebtn/>
+        <Bluebtn items={items}/>
       </div>
       </div>
     </div>

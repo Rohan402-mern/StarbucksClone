@@ -7,7 +7,6 @@ import Foods from '../Menu/Foods'
 const OrderMain = () => {
   const orderSwitch = useSelector(state => state.counter.orderSwitch)
   const refOrderMain = useRef()
-
   useEffect(() => {
     if (refOrderMain.current) {
       
@@ -32,6 +31,7 @@ const OrderMain = () => {
       {orderSwitch === 'Bestseller' && <Bestsellers />}
       {orderSwitch === 'Drinks' && <Drinks />}
       {orderSwitch === 'Food' && <Foods />}
+       
     </div>
   )
 }

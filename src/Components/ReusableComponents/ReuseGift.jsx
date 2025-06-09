@@ -1,7 +1,7 @@
 import React, { use } from 'react'
 import './ReuseGift.css'
 import ReuseItem from './ReuseItem'
-import PopUp from '../PopUp/Popup'
+import PopUp from '../PopUp/PopUp'
 import { useSelector,useDispatch } from 'react-redux'
 import { ModelChange } from '../../redux/counter/counterSlice'
 const ReuseGift = ({head,items}) => {

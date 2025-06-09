@@ -13,7 +13,7 @@ const all_product={
     info: 'TALL(354 ml) .354 kcal',
     fullSummary: 'Everybody’s favourite indulgence. Crafted expertly with premium espresso, blended with milk, and perfected with a hint of vanilla in every sip.',
     summary: 'Everybody’s favourite indulgence. Crafted expertly with prem..',
-    price: '₹ 336.00',
+    price: 336.00,
     iteminfo:'VEGETARIAN - 354 KCAL',
   },
   {
@@ -31,9 +31,13 @@ const all_product={
     info: 'TALL(354 ml) .392 kcal',
     fullSummary: 'Mocha sauce and Frappuccino® chips blended with with Frappuccino® roast coffee and milk and ice, then topped with whipped vanilla topping and mocha drizzle to bring you endless java joy.',
     summary: 'Mocha sauce and Frappuccino® chips blended with with Frappu..',
-    price: '₹ 409.50',
+    price: 409.50,
     iteminfo:'VEGETARIAN - 392 KCAL',
     SIZE:[{name:'tall',price:`₹ ${(0.00).toFixed(2)}`,volume:'354ml'},{name:'grande',price:`₹ ${47.25}`,volume:'473 ml'},{name:'venti',price:`₹ ${94.5}`,volume:'591 ml'}],
+    topping:{
+      'SYRUP AND SAUCES':[{name:'Strawberry Syrup',price:`${52.5}`},{name:'Caramel Syrup',price:`${57.75}`},{name:'Vanilla Syrup',price:`${57.75}`},{name:'Hazelnut Syrup',price:`${57.75}`},{name:'White Mocha Sauce',price:`${57.75}`},{name:'Caramel Sauce',price:`${57.75}`},{name:'Mocha Sauce - Default',price:undefined},],
+      'WHIPPED TOPPING':[{name:'No Whipped Topping- Option',price:undefined},{name:'With Whipped Topping',price:undefined},{name:'Extra Whipped Topping',price:`${26.25}`}  ]
+    },
     customize:{
       MILK:[{name:'Skimmed Milk',price:`+  ₹ ${(0.00).toFixed(2)}`}],
      'NON-DAIRY ALTERNATIVES':[{name:'Soy',price:`+  ₹ ${68.25}`},{name:'Almond',price:`+  ₹ ${89.25}`},{name:'Oats',price:`+  ₹ ${(89.25).toFixed(2)}`}],
@@ -53,8 +57,19 @@ const all_product={
     info: 'SHORT(237 mL) .0 kcal',
     fullSummary: 'Rich in flavour, full-bodied espresso with hot water in true European style.',
     summary: 'Rich in flavour, full-bodied espresso with hot water in true..',
-    price: '₹ 283.50',
-    iteminfo:'VEGETARIAN - 0 KCAL'
+    price: 283.50,
+    iteminfo:'VEGETARIAN - 0 KCAL',
+     SIZE:[{name:'short',price:`₹ ${(0.00).toFixed(2)}`,volume:'237ml'},{name:'tall',price:`₹ ${(36.75).toFixed(2)}`,volume:'354ml'},{name:'grande',price:`₹ ${78.75}`,volume:'473 ml'},{name:'venti',price:`₹ ${120.70}`,volume:'591 ml'}],
+     topping:{
+      'WHIPPED TOPPING':[{name:'No Whipped Topping',price:undefined},{name:' Whipped Topping',price:`${36.75}`}, ],
+      'SYRUP AND SAUCES':[{name:'Mocha Sauce',price:`${57.75}`},{name:'White Mocha Sauce',price:`${57.75}`},{name:'Vanilla Syrup',price:`${57.75}`},{name:'Hazelnut Syrup',price:`${57.75}`},{name:'Caramel Sauce',price:`${57.75}`},],
+      'HONEY TWIGS':[{name:'Honey Twigs',price:`${15.75}`}]
+    },
+     customize:{
+     MILK:[{name:'No Milk',price:`+  ₹ ${(0.00).toFixed(2)}`}],
+     'CHOICE OF ESPRESSO':[{name:'Extra Shot',price:`+ ₹ ${68.25}`},{name:'Blonde Expresso',price:`+ ₹ ${(47.25).toFixed(2)}`}],
+     TEMPERATURE:[{name:'Kids Hot',price:`₹ ${(0.00).toFixed(2)}`},{name:'Extra Hot',price:`₹ ${(0.00).toFixed(2)}`}]
+    }
   },
   { 
     id:4,
@@ -64,7 +79,7 @@ const all_product={
     title: 'Cappuccino',
     info: 'SHORT(237 ml) .104 kcal',
     summary: 'Dark, Rich in flavour espresso lies in wait under a smoothed..',
-    price: '₹ 299.25'
+    price: 299.25
   },
   { 
     id:5,
@@ -74,7 +89,7 @@ const all_product={
     title: 'Butter Croissant',
     info: 'Per Serve (75 g) - 255 kcal',
     summary: '"A flaky and buttery French style pastry served with butter.',
-    price: '₹ 288.75'
+    price: 288.75
   },
   { 
     id:6,
@@ -84,7 +99,7 @@ const all_product={
     title: 'Chicken Salad Sandwich',
     info: 'Per Serve (185 g )  - 574 kcal',
     summary: 'Tender chicken mixed with julienned colored bell peppers, gr..',
-    price: '₹ 294.00'
+    price: 294.00
   },
   { 
     id:7,
@@ -94,7 +109,7 @@ const all_product={
     title: 'Double Chocolate Chip Frappuccino',
     info: 'TALL(354 ml) .415 kcal',
     summary: 'Rich mocha-flavored sauce meets up with chocolaty chips, mil..',
-    price: '₹ 430.50'
+    price: 430.50
   },
   { 
     id:8,
@@ -104,7 +119,7 @@ const all_product={
     title: 'Egg White and Chicken In Multigrain Croiss',
     info: 'Per Serve (200 g)  - 541 kcal',
     summary: 'Fluffy egg white omlette and chicken ham sandwiched in multi..',
-    price: '₹ 388.50'
+    price: 388.50
   },
   { 
     id:9,
@@ -114,7 +129,7 @@ const all_product={
     title: 'Paneer Tikka Sandwich',
     info: 'Per Serve (185 g )  - 537 kcal',
     summary: 'Marinated tandoori paneer filling, sliced cheese, and whole ..',
-    price: '₹ 294.00'
+    price: 294.00
   },
   { 
     id:10,
@@ -124,7 +139,7 @@ const all_product={
     title: 'New York Cheesecake',
     info: 'Per Serve (150 g)  - 485 kcal',
     summary: '"The Classic New York Cheese cake with a rich, creamy satiny..',
-    price: '₹ 435.75'
+    price: 435.75
   },
   { 
     id:11,
@@ -134,7 +149,7 @@ const all_product={
     title: 'Banana Chocolate Loaf Cake',
     info: 'Per Serve (125 g) - 385 Kcal',
     summary: 'English tea cake with rich taste of banana and chocolate.',
-    price: '₹ 346.50'
+    price: 346.50
   },
   { 
     id:12,
@@ -144,7 +159,7 @@ const all_product={
     title: 'Blueberry Muffin',
     info: 'Per Serve (120 g)  - 375.5 kcal',
     summary: 'Buttery vanilla cake with berries dusted with granulated sug..',
-    price: '₹ 330.75'
+    price: 330.75
   }
 
    ],
@@ -157,7 +172,7 @@ Drinks:[
     title: 'Cold coffee',
     info: 'TALL(354 ml) .354 kcal',
     summary: 'Everybody’s favourite indulgence. Crafted expertly with prem..',
-    price: '₹ 336.00'
+    price: 336.00
   },
   {
     id: 2,
@@ -167,7 +182,7 @@ Drinks:[
     title: 'Java Chip Frappuccino',
     info: 'TALL(354 ml) .392 kcal',
     summary: 'Mocha sauce and Frappuccino® chips blended with with Frappu..',
-    price: '₹ 409.50'
+    price: 409.50
   },
   { 
     id:7,
@@ -177,7 +192,7 @@ Drinks:[
     title: 'Double Chocolate Chip Frappuccino',
     info: 'TALL(354 ml) .415 kcal',
     summary: 'Rich mocha-flavored sauce meets up with chocolaty chips, mil..',
-    price: '₹ 430.50'
+    price: 430.50
   },
   { 
     id:8,
@@ -187,7 +202,7 @@ Drinks:[
     title: 'Egg White and Chicken In Multigrain Croiss',
     info: 'Per Serve (200 g)  - 541 kcal',
     summary: 'Fluffy egg white omlette and chicken ham sandwiched in multi..',
-    price: '₹ 388.50'
+    price: 388.50
   },
   { 
     id:9,
@@ -197,7 +212,7 @@ Drinks:[
     title: 'Paneer Tikka Sandwich',
     info: 'Per Serve (185 g )  - 537 kcal',
     summary: 'Marinated tandoori paneer filling, sliced cheese, and whole ..',
-    price: '₹ 294.00'
+    price: 294.00
   },
   { 
     id:10,
@@ -207,7 +222,7 @@ Drinks:[
     title: 'New York Cheesecake',
     info: 'Per Serve (150 g)  - 485 kcal',
     summary: '"The Classic New York Cheese cake with a rich, creamy satiny..',
-    price: '₹ 435.75'
+    price: 435.75
   },
   { 
     id:11,
@@ -217,7 +232,7 @@ Drinks:[
     title: 'Banana Chocolate Loaf Cake',
     info: 'Per Serve (125 g) - 385 Kcal',
     summary: 'English tea cake with rich taste of banana and chocolate.',
-    price: '₹ 346.50'
+    price: 346.50
   },
   { 
     id:12,
@@ -227,7 +242,7 @@ Drinks:[
     title: 'Blueberry Muffin',
     info: 'Per Serve (120 g)  - 375.5 kcal',
     summary: 'Buttery vanilla cake with berries dusted with granulated sug..',
-    price: '₹ 330.75'
+    price: 330.75
   }
 ]
 

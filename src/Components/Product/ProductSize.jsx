@@ -20,6 +20,7 @@ const ProductSize = ({product}) => {
           <ProductNav product={product} />
           {Object.entries(product.customize).map(([key, value]) => (
            <ProductNav2 key={key} title={key} items={value} />
+           
           ))}
         </div>
       </div>

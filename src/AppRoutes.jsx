@@ -9,6 +9,7 @@ import Registration from './Pages/Registration';
 import Order from './Pages/Order';
 import ScrollToTop from './Components/Scroller/ScrollToTop';
 import ProductPage from './Pages/ProductPage';
+import Cart from './Pages/Cart';
 
 function AppRoutes() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function AppRoutes() {
         <Route path="/registration" element={<Registration />} />
         <Route path="/ordering" element={<Order />} />
         <Route path="/ordering/:productName" element={<ProductPage/>} />
+        <Route path="/ordering/cart" element={<Cart/>} />
         <Route path="*" element={<div><h1>404 NOT FOUND</h1></div>} />
       </Routes>
       {shouldShowFooter && <Footer />}

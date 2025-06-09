@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import all_product from '../Components/StarbucksProduct/all_product';
 import ReuseHead from '../Components/ReusableComponents/ReuseHead';
 import { Link } from 'react-router-dom';
-import { barChange } from '../redux/counter/counterSlice';
+import { AddToCart, barChange } from '../redux/counter/counterSlice';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { useRef,useEffect } from 'react';
@@ -67,8 +67,8 @@ const ProductPage = () => {
                 :<div className='productpage-else'>{product.title}</div>}
                     <ProductSize product={product} />
                     <ProductTopping product={product} />
-                    <ProductLine product={product} />
-                    <ProductAdd/>
+                    <ProductLine custom={"CURRENT ITEM"} product={product} />
+                    <ProductAdd navigate={'/ordering'} product={product} onclick={()=>dispatch(AddToCart(product))} add={"Add Item"} />
             </div>
         </div>
         <PopUp show={showModel} onClose={()=>dispatch(ModelChange(false))}>

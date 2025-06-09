@@ -4,7 +4,7 @@ import GreenBtn from './GreenBtn'
 import ProductHead from './ProductHead'
 import { useSelector,useDispatch } from 'react-redux'
 import { sizeChange } from '../../redux/counter/counterSlice'
-const ProductNav = ({product}) => {
+const  ProductNav = ({product}) => {
   const dispatch = useDispatch();
   const size = useSelector((state)=>state.counter.size);
   // console.log(size)

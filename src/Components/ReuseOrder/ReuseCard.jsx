@@ -6,8 +6,10 @@ import BlueBtn from '../ReusableComponents/BlueBtn'
 import { SetSelectedProduct } from '../../redux/counter/counterSlice'
 import { Link } from 'react-router-dom'
 const ReuseCard = ({items}) => {
-   
+      const cart = useSelector((state)=>state.counter.cart)
+      const isExisting = cart.find(product=> product.id === items.id );
       const dispatch = useDispatch();
+      const linkProps = isExisting ? {} : { to: `/ordering/${items.title}` };
   return (
     <div className='reusecard'>
       <div className="reusecard-1">
@@ -21,13 +23,13 @@ const ReuseCard = ({items}) => {
         <p className='reusecard-info'>{items.info}</p>
         <div className='reusecard-summary'>{items.summary}</div>
         <div className="reusecard-btn">
-            <p>{items.price}</p>
-            <Link to={`/ordering/${items.title}`} style={{textDecoration:'none'}} ><BlueBtn /></Link>
+            <p>₹ {items.price}</p>
+            <Link {...linkProps} style={{textDecoration:'none'}} ><BlueBtn items={items} /></Link>
         </div>
       </div>
      
     </div>
-  )
+  ) 
 }
 
 export default ReuseCard

@@ -1,14 +1,14 @@
 import React from 'react'
 import './ProductLine.css'
-const ProductLine = ({product}) => {
+const ProductLine = ({product,custom}) => {
   // console.log(product.title)
   return (
     <div className='productline'>
       <div className='productline-nav'>
-        <h1>CUSTOM ITEM</h1>
+        <h1>{custom}</h1>
         <p>{product.title}</p>
       </div>
-      <p>{product.price}</p>
+      <p>₹ {product.price}</p>
     </div>
   )
 }

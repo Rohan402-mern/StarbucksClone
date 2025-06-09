@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import { barChange } from '../../redux/counter/counterSlice'
 import { useDispatch,useSelector } from 'react-redux'
 import { ModelChange } from '../../redux/counter/counterSlice'
-import PopUp from '../PopUp/Popup'
+import PopUp from '../PopUp/PopCard'
 import PopCard from '../PopUp/PopCard'
 const Barista = () => {
    const showModel = useSelector((state)=>state.counter.showModel);

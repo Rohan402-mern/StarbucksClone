@@ -1,9 +1,21 @@
 import React from 'react'
 import './ProductAdd.css'
-const ProductAdd = () => {
+import { useSelector,useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+const ProductAdd = ({product,add,onclick,navigate}) => {
+  const cart = useSelector((state)=> state.counter.cart)
+  const Navigate = useNavigate()
+  // console.log(cart)
+  const handleBtn=()=>{
+    Navigate(navigate)
+    // console.log('naviagte')
+  }
+  
+  // console.log(product.id)
+  const dispatch = useDispatch()
   return (
     <div className='productadd'>
-      <button>Add Item</button>
+      <button onClick={()=>{if (onclick){onclick()};handleBtn();}} >{add}</button>
     </div>
   )
 }
