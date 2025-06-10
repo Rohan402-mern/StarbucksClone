@@ -25,7 +25,7 @@ const Dashboard = () => {
      <Slider/>
      <Scroller/>
      <HandCrafted/>
-     <Barista/>
+     <Barista title={'Barista Recommends'} view={'View Menu'} />
      <section style={{width:'100vw',margin:'40px 0px',backgroundColor:'white'}}></section>
      <WorldCoffee/>
     </div>

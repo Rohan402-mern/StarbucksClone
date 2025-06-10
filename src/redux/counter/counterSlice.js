@@ -24,6 +24,7 @@ export const counterSlice = createSlice({
     TEMPERATURE:'Kids Hot',
   },
   cart:[],
+  operator:'',
 
   },
   reducers: {
@@ -96,10 +97,13 @@ export const counterSlice = createSlice({
        }
        }
        
-    }
+    },
+    OperatorChange:(state,action)=>{
+      state.operator = action.payload
+    },
   },
 })
 
-export const { isSearch,barChange,indexChange,giftChange,ModelChange,emailChange,passChange,orderChange,suborderChange,SetSelectedProduct,SetSelectedGift,isYes,sizeChange,propChange,AddToCart,IncrementCart,DecrementCart } = counterSlice.actions
+export const { isSearch,barChange,indexChange,giftChange,ModelChange,OperatorChange,emailChange,passChange,orderChange,suborderChange,SetSelectedProduct,SetSelectedGift,isYes,sizeChange,propChange,AddToCart,IncrementCart,DecrementCart } = counterSlice.actions
 
 export default counterSlice.reducer

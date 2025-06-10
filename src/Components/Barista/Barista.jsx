@@ -6,15 +6,15 @@ import { useDispatch,useSelector } from 'react-redux'
 import { ModelChange } from '../../redux/counter/counterSlice'
 import PopUp from '../PopUp/PopCard'
 import PopCard from '../PopUp/PopCard'
-const Barista = () => {
+const Barista = ({title,view}) => {
    const showModel = useSelector((state)=>state.counter.showModel);
   //  console.log(showModel)
   const dispatch = useDispatch();
   return (
     <div className='barista'>
       <div className="barista-1">
-        <h1>Barista Recommends</h1>
-        <p onClick={()=>dispatch(barChange('order')) }><Link style={{color:'inherit',textDecoration:'none'}} to={'/ordering'} >View Menu</Link></p>
+        <h1>{title}</h1>
+        <p onClick={()=>dispatch(barChange('order')) }><Link style={{color:'inherit',textDecoration:'none'}} to={'/ordering'} >{view}</Link></p>
       </div>
       <div className="barista-2">
         <div className="barista-s1">

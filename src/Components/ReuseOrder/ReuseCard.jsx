@@ -23,7 +23,7 @@ const ReuseCard = ({items}) => {
         <p className='reusecard-info'>{items.info}</p>
         <div className='reusecard-summary'>{items.summary}</div>
         <div className="reusecard-btn">
-            <p>₹ {items.price}</p>
+            <p>₹ {(items.price).toFixed(2)}</p>
             <Link {...linkProps} style={{textDecoration:'none'}} ><BlueBtn items={items} /></Link>
         </div>
       </div>

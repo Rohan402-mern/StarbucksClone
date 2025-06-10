@@ -1,0 +1,41 @@
+.cartbill{
+    /* margin-bottom: 300px; */
+    background-color: #F2F0EB;
+    padding: 45px 115px;
+}
+.cartbill-cont h1{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cartbill-cont hr{
+    margin-top: 30px;
+}
+.cartbill-cont ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 23px;
+}
+.cartbill-cont li{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+}
+.cartbill-cont span{
+    color:rgba(0, 0, 0, 0.58);
+    font-size: 14px;
+}
+.cartbill-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.cartbill-total span{
+     color:rgba(0, 0, 0, 0.88);
+    font-weight: 600;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './PopCard.css'
-const PopCard = ({selectedProduct}) => {
+const PopCard = ({selectedProduct,children}) => {
+    if (!selectedProduct) return null;
   return (
     <div className='popcard'>
       <div className='popcard-img'>
@@ -18,6 +19,7 @@ const PopCard = ({selectedProduct}) => {
      <p className='popcard-s2-summary' >{selectedProduct.fullSummary}</p>
      <p className='popcard-s2-price'>{selectedProduct.price}</p>
     </div>
+    {children}
     </div>
   )
 }

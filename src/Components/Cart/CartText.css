@@ -1,0 +1,75 @@
+.carttext{
+    /* margin-bottom: 300px; */
+    /* background-color: aqua; */
+    padding: 50px 0px;
+}
+.carttext-1{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 115px ;
+}
+.carttext-1 h1{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 12px;
+    font-weight: 400;
+}
+.carttext textarea{
+    width: calc(100% - 230px);
+    /* margin: 0px 115px; */
+    margin:20px 0px 60px 115px;
+    border-radius: 6px;
+    padding: 12px;
+    outline: none;
+    border:1px solid #BDBDBD;
+}
+.carttext textarea::placeholder{
+    /* padding: 12px; */
+    font-size: 11px;
+    opacity: 0.55;
+}
+.carttext-2 h1{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color:red; */
+    padding-left: 115px;
+}
+.carttext-2 hr{
+    margin: 23px 0px;
+}
+.carttext-card{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    /* background-color: red; */
+    padding-left: 115px;
+}
+.carttext-card1{
+    background-color: #F9F9F9;
+    padding: 15px 18px;
+    border-radius: 8px;
+
+}
+.carttext-card1 input{
+    width: 19px;
+    cursor: pointer;
+    height: 19px;   
+}
+.carttext-card1 div{
+    display: flex;
+    gap: 8px;
+    padding-left:30px ;
+    padding-bottom: 15px;
+}
+.carttext-card1 img{
+    width: 80px;
+    border-radius: 6px;
+}
+.carttext-card1 p{
+    color:rgb(30, 57, 50);
+    font-size: 16px;
+    font-weight: 600;
+
+}
