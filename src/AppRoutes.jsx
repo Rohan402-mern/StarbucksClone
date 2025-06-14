@@ -14,6 +14,11 @@ import Cart from './Pages/Cart';
 function AppRoutes() {
   const location = useLocation();
 
+  
+  if (location.pathname === '/') {
+    return <Navigate to="/dashboard" replace />;
+  }
+
   const showFooterPaths = ['/dashboard', '/giftcards', '/profile','/profile/help-center'];
   const shouldShowFooter = showFooterPaths.includes(location.pathname);
 
@@ -22,7 +27,6 @@ function AppRoutes() {
       <Navbar />
       <ScrollToTop/>
       <Routes>
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/giftcards" element={<Gift />} />
         <Route path="/profile" element={<Profile />} />
